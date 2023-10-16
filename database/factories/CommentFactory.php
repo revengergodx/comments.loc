@@ -20,7 +20,6 @@ class CommentFactory extends Factory
     {
         return [
             'user_id' => User::get()->random()->id,
-            '' => $this->faker->image(null, 360, 360, ),
             'comment' => $this->faker->paragraph(1),
             'creation_time' => Carbon::now()->toDateTimeString(),
         ];
